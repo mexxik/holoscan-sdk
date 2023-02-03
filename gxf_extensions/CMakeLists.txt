@@ -23,7 +23,7 @@ list(JOIN CMAKE_INSTALL_RPATH_LIST ":" CMAKE_INSTALL_RPATH)
 set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/lib/gxf_extensions)
 set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/lib/gxf_extensions)
 
-add_subdirectory(aja)
+# add_subdirectory(aja)
 add_subdirectory(custom_lstm_inference)
 add_subdirectory(format_converter)
 
@@ -40,15 +40,15 @@ add_subdirectory(v4l2)
 
 add_subdirectory(visualizer_tool_tracking)
 
-add_subdirectory(holoviz)
+#add_subdirectory(holoviz)
 add_subdirectory(bayer_demosaic)
 add_subdirectory(multiai_inference)
 add_subdirectory(multiai_postprocessor)
-add_subdirectory(visualizer_icardio)
+#add_subdirectory(visualizer_icardio)
 
-if(HOLOSCAN_BUILD_HI_SPEED_ENDO_APP)
-    add_subdirectory(emergent)
-endif()
+#if(HOLOSCAN_BUILD_HI_SPEED_ENDO_APP)
+#    add_subdirectory(emergent)
+#endif()
 
 add_subdirectory(mocks)
 

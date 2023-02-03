@@ -26,7 +26,7 @@ option(BUILD_SHARED_LIBS "Build Shared Libraries" ON)
 option(HOLOSCAN_BUILD_MODULES "Build Holoscan SDK Modules" ON)
 option(HOLOSCAN_BUILD_GXF_EXTENSIONS "Build GXF Extensions" ON)
 option(HOLOSCAN_BUILD_APPS "Build Holoscan SDK Apps" ON)
-option(HOLOSCAN_BUILD_EXAMPLES "Build Holoscan SDK Examples" ON)
+option(HOLOSCAN_BUILD_EXAMPLES "Build Holoscan SDK Examples" OFF)
 option(HOLOSCAN_BUILD_PYTHON "Build Holoscan SDK Python Bindings" ON)
 option(HOLOSCAN_DOWNLOAD_DATASETS "Download SDK Apps Datasets" ON)
 option(HOLOSCAN_BUILD_TESTS "Build Holoscan SDK Tests" ON)
@@ -509,9 +509,9 @@ endif()
 # ##############################################################################
 # # Build examples
 # ##############################################################################
-if(HOLOSCAN_BUILD_EXAMPLES)
-  add_subdirectory(examples)
-endif()
+#if(HOLOSCAN_BUILD_EXAMPLES)
+#  add_subdirectory(examples)
+#endif()
 
 # ##############################################################################
 # # Add tests
