@@ -13,7 +13,8 @@
         // (https://github.com/microsoft/vscode-remote-release/issues/4841)
     },
     "runArgs": [
-        "--runtime=nvidia",
+        //"--runtime=nvidia",
+        "--gpus=all",
         "--net=host",
         // Current VSCode DevContainer doesn't support dynamic 'runArgs' for docker
         // (see https://github.com/microsoft/vscode-remote-release/issues/3972).
@@ -22,7 +23,7 @@
         // Uncomment the following line to use AJA Capture Card
         // "--device=/dev/ajantv20:/dev/ajantv20",
         // Uncomment the following line to use /dev/video0. Also, execute 'sudo chmod 666 /dev/video0' inside the container.
-        // "--device=/dev/video0:/dev/video0",
+        "--device=/dev/video0:/dev/video0",
         "--cap-add=SYS_PTRACE",
         "--security-opt=seccomp=unconfined",
     ],

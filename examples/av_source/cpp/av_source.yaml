@@ -1,0 +1,12 @@
+---
+av:
+  filename: ../data/mdt/videos/iov.mp4
+
+holoviz:
+  width: 1280
+  height: 720
+  tensors:
+    - name: ""
+      type: color
+      opacity: 1.0
+      priority: 0
